@@ -13,10 +13,9 @@ function calculate() {
     } catch (error) {
         document.getElementById('display').value = 'Error';
     }
-<<<<<<< HEAD
+
 }
-=======
-}
+
 
 document.addEventListener('keypress',function(event){
     var ky = event.key;
@@ -77,4 +76,4 @@ document.addEventListener('keypress',function(event){
     }
 
 })
->>>>>>> 093229f (Button keypress response has been added)
+
