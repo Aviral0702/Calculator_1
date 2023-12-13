@@ -15,10 +15,9 @@ function calculate() {
     }
 
 }
-
-
 document.addEventListener('keypress',function(event){
     var ky = event.key;
+    var code = event.code;
     switch(ky){
         case '0':
             appendValue(ky);
@@ -71,9 +70,28 @@ document.addEventListener('keypress',function(event){
         case 'C':
             clearDisplay();
             break;  
+        
         default:
             break;
     }
 
 })
+document.addEventListener('keydown', function(event) {
+    if (event.keyCode === 8) {
+        // Handle backspace key
+        backspace();
+    }
+});
+
+function backspace() {
+    // Your backspace functionality here
+    var display = document.getElementById('display');
+    var currentValue = display.value;
+
+    // Remove the last character
+    var newValue = currentValue.slice(0, -1);
+
+    // Update the display with the new value
+    display.value = newValue;
+}
 

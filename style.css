@@ -22,3 +22,7 @@ button {
     align-items: center;
     justify-content: center;
 }
+.pressed{
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 1;
+}
